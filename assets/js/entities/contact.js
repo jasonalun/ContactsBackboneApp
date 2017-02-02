@@ -81,7 +81,7 @@ ContactManager.module("Entities", function(Entities, ContactManager, Backbone, M
 		return API.getContactEntities();
 	});
 
-	ContactManager.reqres.setHandler("contact:entity", function(id) {
-		return API.getContactEntity(id);
+	ContactManager.reqres.setHandler("contact:entity", function(id, options) {
+		return API.getContactEntity(id, options);
 	});
 });
